@@ -1,0 +1,69 @@
+const NFTs = [
+  {
+      name: "Gucci",
+      size: "XL",
+      properties: "Leather",
+      color: "Black",
+      brand: "Gucci"
+  },
+  {
+      name: "Prada",
+      size: "XXL",
+      properties: "Canvas",
+      color: "Brown",
+      brand: "Prada"
+  },
+  {
+      name: "Moschino",
+      size: "XXXL",
+      properties: "Crocodile",
+      color: "Black",
+      brand: "Moschino"
+  }
+];
+
+function mintNFT(nft) {
+  NFTs.push(nft);
+  return nft;
+}
+
+function listNFTs() {
+  for (let i = 0; i < NFTs.length; i++) {
+      console.log(NFTs[i]);
+  }
+  console.log("------------------");
+}
+
+function getTotalSupply() {
+  console.log(Total Supply: ${NFTs.length});
+  console.log("------------------");
+}
+
+// Call your functions below this line
+
+listNFTs();
+
+mintNFT({
+  name: "Versace",
+  size: "L",
+  properties: "Silk",
+  color: "White",
+  brand: "Versace"
+});
+mintNFT({
+  name: "Giorgio Armani",
+  size: "S",
+  properties: "Leather",
+  color: "Red",
+  brand: "Giorgio Armani"
+});
+mintNFT({
+  name: "Bottega Veneta",
+  size: "M",
+  properties: "Canvas",
+  color: "Blue",
+  brand: "Bottega Veneta"
+});
+listNFTs();
+
+getTotalSupply();
